@@ -1,0 +1,74 @@
+[
+    {
+        "image": "/source/song_1.jpg",
+        "audio": "/source/song_1.mp3",
+        "song": "丑八怪",
+        "album": "意外",
+        "singer": "薛之谦",
+        "duration": 253,
+        "isLike": true
+    },
+    {
+        "image": "/source/song_2.jpg",
+        "audio": "/source/song_2.mp3",
+        "song": "小半",
+        "album": "小梦大半",
+        "singer": "陈粒",
+        "duration": 297,
+        "isLike": false
+    },
+    {
+        "image": "/source/song_3.jpg",
+        "audio": "/source/song_3.mp3",
+        "song": "Shape of You",
+        "album": "÷",
+        "singer": "ed sheeran",
+        "duration": 235,
+        "isLike": false
+    },
+    {
+        "image": "/source/song_4.jpg",
+        "audio": "/source/song_4.flac",
+        "song": "American Boy",
+        "album": "2009 GRAMMY Nominees",
+        "singer": "Estelle,Kanye West",
+        "duration": 242,
+        "isLike": true
+    },
+    {
+        "image": "/source/song_5.jpg",
+        "audio": "/source/song_5.flac",
+        "song": "Cheap Thrills",
+        "album": "This Is Acting",
+        "singer": "Sia",
+        "duration": 211,
+        "isLike": false
+    },
+    {
+        "image": "/source/song_6.jpg",
+        "audio": "/source/song_6.flac",
+        "song": "Closer",
+        "album": "Closer",
+        "singer": "The Chainsmokers,Halsey",
+        "duration": 244 ,
+        "isLike": true
+    },
+    {
+        "image": "/source/song_7.jpg",
+        "audio": "/source/song_7.flac",
+        "song": "成全",
+        "album": "成全",
+        "singer": "林宥嘉",
+        "duration": 309,
+        "isLike": false
+    },
+    {
+        "image": "/source/song_8.jpg",
+        "audio": "/source/song_8.flac",
+        "song": "全世界谁倾听你",
+        "album": "全世界谁倾听你",
+        "singer": "林宥嘉",
+        "duration": 259,
+        "isLike": true
+    }
+]

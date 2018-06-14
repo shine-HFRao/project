@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    line-height: 1.62;
+}
+html{
+    color: #111;
+}
+#anony-nav {
+    width: 950px;
+    margin: 0 auto 25px;
+}
+#anony-nav .anony-nav-links {
+    float: right;
+    margin-top: 6px;
+}
+#anony-nav .anony-nav-links li {
+    display: inline-block;
+    zoom: 1;
+    margin: 0 0 0 17px;
+}
+#anony-nav .anony-nav-links li a {
+    display: inline-block;
+    zoom: 1;
+    width: 40px;
+    height: 20px;
+    overflow: hidden;
+    margin: 0;
+    line-height: 20em;
+    outline: none;
+    vertical-align: middle;
+    background: transparent url(https://img3.doubanio.com/f/sns/a98a716a173efb01ba787c966b4ba337b7cf9f55/pics/sns/anony_home/anony_nav_logo.png) no-repeat 100% 100%;
+    background-image: -webkit-image-set(url(https://img3.doubanio.com/f/sns/a98a716a173efb01ba787c966b4ba337b7cf9f55/pics/sns/anony_home/anony_nav_logo.png) 2x);
+}
+#anony-nav .anony-nav-links li .lnk-book {
+    background-position: 0 0;
+}
+#anony-nav h1 {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    width: 160px;
+    height: 34px;
+    margin: 0 20px 0 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: normal;
+    background: url(https://img3.doubanio.com/f/sns/19886d443852bee48de2ed91f4a3bdfdaf8c809c/pics/nav/logo_db.png) no-repeat 0 0;
+    background-image: -webkit-image-set(url(https://img3.doubanio.com/f/sns/19886d443852bee48de2ed91f4a3bdfdaf8c809c/pics/nav/logo_db.png) 1x, url(https://img3.doubanio.com/f/sns/0f9e2dbca60b52f595ddbc02073cb4bb879ed1c9/pics/nav/logo_db@2x.png) 2x);
+    overflow: hidden;
+}
+h1{
+    word-wrap: break-word;
+    line-height: 1.1;
+}
+#anony-nav h1 a {
+    display: block;
+    height: 34px;
+    line-height: 10em;
+}
+#anony-nav .anony-srh {
+    position: relative;
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    width: 270px;
+    height: 30px;
+    border: 1px solid #c3c3c3;
+}
+.itemList{
+    display: none;
+    position: absolute;
+    top: 31px;
+    left: -1px;
+    border-left: 1px solid #c3c3c3;
+    border-bottom: 1px solid #c3c3c3;
+    border-right: 1px solid #c3c3c3;
+    /* height: 100px; */
+    width: 270px; 
+}
+.itemList li{
+    padding: 5px;
+    height: 40px;
+}
+.itemList li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #ccc;
+}
+.itemList img{
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+.itemList a div{
+    margin-left: 45px;
+    height: 40px;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+    border: 0px;
+}
+#anony-nav .anony-srh .inp {
+    display: block;
+    height: 30px;
+    overflow: hidden;
+}
+#anony-nav .anony-srh .inp input {
+    width: 240px;
+    border: none;
+    font-size: 13px;
+    height: 20px;
+    padding: 5px;
+}
+input {
+    margin-right: 3px;
+    vertical-align: middle;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    outline: none;
+}
+#anony-nav .anony-srh .bn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    background: url(https://img3.doubanio.com/f/sns/f71f15922ebd7c0ff0ea0e7a25577529efd8981a/pics/icon/bn_srh_1.png) 50% 50% no-repeat;
+}
+#anony-nav .anony-srh .bn input {
+    border: none;
+    background: transparent;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    color: transparent;
+    cursor: pointer;
+}

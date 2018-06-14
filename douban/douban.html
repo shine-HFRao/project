@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/douban.css">
+</head>
+<body>
+    <div id="anony-nav">
+    
+        <h1>
+            <a href="https://www.douban.com">豆瓣</a>
+        </h1>
+    
+        <div class="anony-srh">
+            <form action="https://www.douban.com/search" method="get">
+                <span class="inp">
+                    <input type="text" maxlength="60" size="12" placeholder="书籍、电影、音乐、小组、小站、成员" name="q" autocomplete="off">
+                </span>
+                <span class="bn">
+                    <input type="submit" value="搜索">
+                </span>
+            </form>
+            <div class="itemList">
+                <ul></ul>
+            </div>
+        </div>
+        
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/douban.js"></script>
+</body>
+</html>
