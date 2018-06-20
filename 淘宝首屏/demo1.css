@@ -1,0 +1,96 @@
+.wrapper .search-wrap .search-con .logo-box{
+    width:190px;
+    height:130px;
+    border:1px solid black;
+    display:inline-block;
+    background-image:url('img/logo.png');
+    background-size:100% 100%;
+}
+.wrapper .search-wrap .search-con .search-box{
+    height:87px;
+    width:627px;
+    bordeR:1px solid black;
+    display:inline-block;
+    margin-left:50px;
+    position: relative;
+  
+}
+.wrapper .search-wrap .search-con .code-box{
+    border:1px solid black;
+    height:90px;
+    width:76px;
+    display:inline-block;
+    margin-left:120px;
+}
+.wrapper .search-wrap .search-con .search-box .search-bd{
+    width:627px;
+    height:62px;
+    /* border:1px solid black;  */
+    position: relative;
+}
+.wrapper .search-wrap .search-con .search-box .search-tab{
+    width:610px;
+    height:22px;
+    /* border:1px solid black; */
+    margin-left:17px;
+}
+.wrapper .search-wrap .search-con .search-box .search-tab ul li{
+    float: left;
+    height:22px;
+    width:36px;
+    color:#f40;
+    font-size:12px;
+    text-align: center;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    line-height: 22px;
+    margin-right: 4px;
+    cursor: pointer;
+}  
+.wrapper .search-wrap .search-con .search-box .search-tab ul .select{
+    color:#fff;
+    font-weight:700;
+    background:linear-gradient(to right,#ff9000 0,#ff5000 100%);
+}  
+.wrapper .search-wrap .search-con .search-box .search-panel{
+    height:40px;
+    width:627px;
+    /* border:1px solid black; */
+    position:relative;
+}
+.wrapper .search-wrap .search-con .search-box form{
+    /* display:inline-block; */
+}
+
+.wrapper .search-wrap .search-con .search-box .btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    width: 74px;
+    height: 40px;
+    overflow: hidden;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.wrapper .search-wrap .search-con .search-box .btn button{
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFF;
+    background: linear-gradient(to right,#ff9000 0,#ff5000 100%);
+    cursor: pointer;
+    height: 100%;
+    border: none;
+    width: 100%;
+}
+.wrapper .search-wrap .search-con .search-box .search-con{
+    margin-right: 74px;
+    border: 2px solid #ff5000;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: none;
+    overflow: hidden;
+    height: 36px;
+    width:551px;
+}

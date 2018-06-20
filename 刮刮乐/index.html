@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        canvas{
+            border: 1px solid #000;
+            background-position: center center;
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="300" height="300"></canvas>
+    <script>
+        var oCanvas = document.getElementById('myCanvas');
+        var ctx = oCanvas.getContext('2d');
+        var l = oCanvas.offsetLeft;
+        var t = oCanvas.offsetTop;
+        var h = oCanvas.height;
+        var w = oCanvas.width;
+        var x,y,lastx,lasty;
+        var img = new Image();
+        
+        
+        init();
+        function init(){
+            ctx.fillStyle = '#ccc';
+            ctx.fillRect(0, 0, 400, 400);
+            var numb = Math.random();
+            var p ;
+            p = numb > 0.5 ? 1 : 2;
+            img.src = 'img/' + p + '.jpg';
+            img.onload = function (){
+                oCanvas.style.backgroundImage = 'url(' + img.src + ')';
+                oCanvas.addEventListener('mousedown', creatFun);
+            }
+            
+        }
+
+        function creatFun(e){
+            lastx = e.clientX - l;
+            lasty = e.clientY - t;
+            
+            ctx.globalCompositeOperation = 'destination-out';
+            oCanvas.addEventListener('mousemove', arcMove);
+            document.addEventListener('mouseup', arcStop);
+        }
+
+        function arcMove(e){
+            x = e.clientX - l;
+            y = e.clientY - t;
+            ctx.beginPath();
+            ctx.moveTo(lastx, lasty);
+            ctx.lineWidth = 30;
+            ctx.lineCap = 'round'
+
+            ctx.lineTo(x, y);
+            ctx.stroke();
+            lastx = x;
+            lasty = y;
+            
+        }
+
+        function arcStop(){
+            oCanvas.removeEventListener('mousemove', arcMove);
+            oCanvas.removeEventListener('mousedown', arcStop);
+            clearAll();
+        }
+
+        function clearAll(){
+            var d = ctx.getImageData(0, 0, w, h);
+            // console.log(d);
+            var data = d.data;
+            var len = d.data.length;
+            var point = 0;
+            for(var i = 0; i < len; i += 4){
+                if(data[i] == 0){
+                    point++;
+                }
+            }
+            if(point >= w * h * 0.7){
+                ctx.clearRect(0, 0, w, h);
+            }
+        }
+    </script>
+</body>
+</html>
